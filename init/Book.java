@@ -6,6 +6,10 @@ public class Book {
     checkOut = out;
   }
 
+  void checkIn () {
+    checkOut = false;
+  }
+
   @Override
   protected void finalize() throws Throwable {
     // TODO Auto-generated method stub
@@ -17,6 +21,12 @@ public class Book {
   }
 
   public static void main(String[] args) {
+    // Book novel = new Book(false);
+
+    // novel.checkIn();
+
     new Book(true);
+
+    System.gc(); // 触发执行finalize
   }
 }
