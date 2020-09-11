@@ -20,8 +20,8 @@ public class ExplicitStatic {
     Cups.cup2.f(111);
   }
 
-  // static Cups cups1 = new Cups();
-  // static Cups cups2 = new Cups();
+  static Cups cups1 = new Cups();
+  static Cups cups2 = new Cups();
 }
 
 // 静态初始化动作只执行一次
